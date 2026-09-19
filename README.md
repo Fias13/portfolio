@@ -102,11 +102,27 @@ npm run preview   # optional local preview
 
 ## Deployment
 
-- **Frontend (`client/`)** → Vercel or Netlify. Build command `npm run build`, output directory `dist`. Set `VITE_API_URL` to your deployed API URL.
-- **Backend (`server/`)** → Render or Railway. Build command `npm run build`, start command `npm run start`. Set all variables from `server/.env.example`, run `npx prisma migrate deploy` as a release step, and mount a persistent volume for `uploads/` (or swap the upload middleware for S3/Supabase Storage in production).
-- **Database** → managed PostgreSQL (Render/Railway Postgres, or Supabase).
+Recommended free-tier path — one provider per concern:
+
+- **Database** → [Supabase](https://supabase.com). Create a project, copy the connection string (Settings → Database → Connection string, "Transaction" pooler) into `DATABASE_URL`.
+- **Backend (`server/`)** → [Render](https://render.com). New Web Service pointed at this repo, root directory `server`, build command `npm install && npx prisma generate && npm run build`, start command `npm run start`. Set every variable from `server/.env.example` (including the Supabase Storage ones below), and run `npx prisma migrate deploy && npm run seed` once via the Render Shell (or as a pre-deploy command) to set up tables and the admin user.
+- **Frontend (`client/`)** → [Vercel](https://vercel.com). Root directory `client`, build command `npm run build`. Set `VITE_API_URL` to your Render backend URL + `/api`. After deploying, update `CLIENT_URL` on Render to the Vercel URL so CORS allows it.
 
 Never commit `.env` files — only the `.env.example` templates are tracked.
+
+### Media storage (avoiding lost uploads on redeploy)
+
+By default, uploaded images are written to `server/uploads/` on local disk — fine for local development, but most hosting platforms (including Render's free tier) don't persist local disk across deploys, so uploaded images would disappear every time you redeploy.
+
+To avoid that, set these on the backend (reusing the same Supabase project as your database, no extra account needed):
+
+```
+SUPABASE_URL="https://<your-project>.supabase.co"
+SUPABASE_SERVICE_ROLE_KEY="<service role key, from Project Settings → API>"
+SUPABASE_STORAGE_BUCKET="portfolio-media"
+```
+
+When both `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` are set, `server/src/routes/media.routes.ts` uploads files to that Supabase Storage bucket instead of local disk (the bucket is created automatically as public on first upload if it doesn't exist yet) and image URLs become permanent Supabase URLs. Leave those variables unset to keep using local disk, which is the default for local development. `SUPABASE_SERVICE_ROLE_KEY` is a secret with full storage access — only set it on the server, never in `client/.env`.
 
 ## Security notes
 
