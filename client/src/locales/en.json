@@ -1,0 +1,113 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "achievements": "Achievements",
+    "resume": "Download Resume"
+  },
+  "hero": {
+    "badge": "AVAILABLE FOR JUNIOR FRONTEND OPPORTUNITIES",
+    "headline1": "Frontend Developer",
+    "headline2": "who cares about the details.",
+    "subtitle": "Hi, I'm Jirat — a Computer Science graduate with Software Testing internship experience and a passion for building modern, responsive, and reliable web applications.",
+    "viewProjects": "View Projects",
+    "downloadResume": "Download Resume"
+  },
+  "about": {
+    "title": "About Me",
+    "eyebrow": "Get to know me",
+    "cs": "Computer Science",
+    "university": "Bangkok University",
+    "honors": "First-Class Honors",
+    "internship": "Software Tester Internship",
+    "projects": "Frontend Projects",
+    "bootcamp": "ETDA Bootcamp 2026",
+    "bootcampPrize": "1st Prize"
+  },
+  "skills": {
+    "title": "Tech Stack",
+    "eyebrow": "Tools I work with",
+    "categories": {
+      "Frontend": "Frontend",
+      "Database": "Database",
+      "Testing": "Testing",
+      "Tools": "Tools",
+      "Soft Skills": "Soft Skills"
+    }
+  },
+  "softSkills": {
+    "title": "Soft Skills",
+    "eyebrow": "Beyond the Code"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "eyebrow": "Selected Work",
+    "viewProject": "View Case Study",
+    "viewAll": "View All Projects",
+    "liveDemo": "Live Demo",
+    "sourceCode": "Source Code",
+    "search": "Search projects...",
+    "allCategories": "All Categories",
+    "featuredOnly": "Featured only",
+    "empty": "No projects match your filters yet."
+  },
+  "projectDetail": {
+    "problem": "Problem",
+    "solution": "Solution",
+    "role": "Role",
+    "techStack": "Tech Stack",
+    "features": "Features",
+    "challenges": "Challenges",
+    "results": "Results",
+    "gallery": "Gallery",
+    "back": "Back to Projects"
+  },
+  "experience": {
+    "title": "Experience",
+    "eyebrow": "Where I've worked",
+    "present": "Present",
+    "responsibilities": "Responsibilities"
+  },
+  "quality": {
+    "title": "Built with a Quality Mindset.",
+    "description": "My Software Testing experience influences how I build frontend applications — thinking about usability, edge cases, reliability, and maintainability from the beginning.",
+    "frontend": "Frontend",
+    "quality": "Quality"
+  },
+  "achievements": {
+    "title": "Achievements",
+    "eyebrow": "Recognition"
+  },
+  "certificates": {
+    "title": "Certificates",
+    "eyebrow": "Credentials",
+    "viewCredential": "View Credential"
+  },
+  "blog": {
+    "title": "Blog & Notes",
+    "eyebrow": "Developer Notes",
+    "readMore": "Read More",
+    "search": "Search articles...",
+    "allTags": "All Tags",
+    "empty": "No articles found."
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with React, TypeScript, and a quality-first mindset."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong.",
+    "notFound": "Not found",
+    "backHome": "Back to Home"
+  },
+  "errors": {
+    "404title": "Looks like this page went on a coffee break.",
+    "404sub": "The page you're looking for doesn't exist or has moved.",
+    "500title": "Something went wrong.",
+    "500sub": "Please try refreshing the page, or come back later."
+  }
+}

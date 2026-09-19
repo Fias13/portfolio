@@ -1,0 +1,113 @@
+{
+  "nav": {
+    "home": "หน้าแรก",
+    "about": "เกี่ยวกับ",
+    "skills": "ทักษะ",
+    "projects": "ผลงาน",
+    "experience": "ประสบการณ์",
+    "achievements": "ความสำเร็จ",
+    "resume": "ดาวน์โหลดเรซูเม่"
+  },
+  "hero": {
+    "badge": "พร้อมรับงานตำแหน่ง Junior Frontend Developer",
+    "headline1": "Frontend Developer",
+    "headline2": "ที่ใส่ใจในทุกรายละเอียด",
+    "subtitle": "สวัสดีครับ ผมจิรัฏฐ์ บัณฑิตวิทยาการคอมพิวเตอร์ที่มีประสบการณ์ฝึกงานด้าน Software Testing และหลงใหลในการสร้างเว็บแอปพลิเคชันที่ทันสมัย responsive และเชื่อถือได้",
+    "viewProjects": "ดูผลงาน",
+    "downloadResume": "ดาวน์โหลดเรซูเม่"
+  },
+  "about": {
+    "title": "เกี่ยวกับผม",
+    "eyebrow": "ทำความรู้จักผม",
+    "cs": "วิทยาการคอมพิวเตอร์",
+    "university": "มหาวิทยาลัยกรุงเทพ",
+    "honors": "เกียรตินิยมอันดับหนึ่ง",
+    "internship": "ฝึกงาน Software Tester",
+    "projects": "โปรเจกต์ Frontend",
+    "bootcamp": "ETDA Bootcamp 2026",
+    "bootcampPrize": "รางวัลชนะเลิศอันดับ 1"
+  },
+  "skills": {
+    "title": "เทคโนโลยีที่ใช้",
+    "eyebrow": "เครื่องมือที่ผมใช้งาน",
+    "categories": {
+      "Frontend": "Frontend",
+      "Database": "ฐานข้อมูล",
+      "Testing": "การทดสอบ",
+      "Tools": "เครื่องมือ",
+      "Soft Skills": "ทักษะทางสังคม"
+    }
+  },
+  "softSkills": {
+    "title": "ทักษะทางสังคม",
+    "eyebrow": "นอกเหนือจากโค้ด"
+  },
+  "projects": {
+    "title": "ผลงานเด่น",
+    "eyebrow": "ผลงานคัดสรร",
+    "viewProject": "ดูกรณีศึกษา",
+    "viewAll": "ดูผลงานทั้งหมด",
+    "liveDemo": "ดูตัวอย่างใช้งานจริง",
+    "sourceCode": "ซอร์สโค้ด",
+    "search": "ค้นหาผลงาน...",
+    "allCategories": "ทุกหมวดหมู่",
+    "featuredOnly": "เฉพาะผลงานเด่น",
+    "empty": "ไม่พบผลงานที่ตรงกับตัวกรองของคุณ"
+  },
+  "projectDetail": {
+    "problem": "ปัญหา",
+    "solution": "แนวทางแก้ไข",
+    "role": "บทบาท",
+    "techStack": "เทคโนโลยีที่ใช้",
+    "features": "ฟีเจอร์",
+    "challenges": "ความท้าทาย",
+    "results": "ผลลัพธ์",
+    "gallery": "แกลเลอรี",
+    "back": "กลับไปหน้าผลงาน"
+  },
+  "experience": {
+    "title": "ประสบการณ์ทำงาน",
+    "eyebrow": "เส้นทางการทำงาน",
+    "present": "ปัจจุบัน",
+    "responsibilities": "ความรับผิดชอบ"
+  },
+  "quality": {
+    "title": "พัฒนาด้วยแนวคิดด้านคุณภาพ",
+    "description": "ประสบการณ์ Software Testing ของผมมีอิทธิพลต่อวิธีที่ผมสร้างแอปพลิเคชัน Frontend โดยคำนึงถึงการใช้งาน กรณีขอบ ความน่าเชื่อถือ และการบำรุงรักษาตั้งแต่เริ่มต้น",
+    "frontend": "Frontend",
+    "quality": "คุณภาพ"
+  },
+  "achievements": {
+    "title": "ความสำเร็จ",
+    "eyebrow": "รางวัลและการยอมรับ"
+  },
+  "certificates": {
+    "title": "ใบรับรอง",
+    "eyebrow": "หลักฐานความสามารถ",
+    "viewCredential": "ดูใบรับรอง"
+  },
+  "blog": {
+    "title": "บล็อกและบันทึก",
+    "eyebrow": "บันทึกของนักพัฒนา",
+    "readMore": "อ่านเพิ่มเติม",
+    "search": "ค้นหาบทความ...",
+    "allTags": "ทุกแท็ก",
+    "empty": "ไม่พบบทความ"
+  },
+  "footer": {
+    "rights": "สงวนลิขสิทธิ์",
+    "builtWith": "สร้างด้วย React, TypeScript และแนวคิดคุณภาพเป็นอันดับแรก"
+  },
+  "common": {
+    "loading": "กำลังโหลด...",
+    "error": "เกิดข้อผิดพลาด",
+    "notFound": "ไม่พบข้อมูล",
+    "backHome": "กลับหน้าแรก"
+  },
+  "errors": {
+    "404title": "ดูเหมือนหน้านี้ไปพักดื่มกาแฟซะแล้ว",
+    "404sub": "ไม่พบหน้าที่คุณกำลังค้นหา หรือหน้านี้อาจถูกย้ายไปแล้ว",
+    "500title": "เกิดข้อผิดพลาดบางอย่าง",
+    "500sub": "กรุณาลองรีเฟรชหน้านี้ หรือกลับมาใหม่ภายหลัง"
+  }
+}
